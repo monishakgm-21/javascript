@@ -63,9 +63,11 @@
           };
 
           decbutton.onclick=function()
-          {
+          { if(newvalue>0)
+            {
             newvalue--;
             value.textContent=newvalue;
+            }
           };
 
           resetbutton.onclick=function()
