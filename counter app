@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>counter app</title>
+         <style>
+             .heading
+             {
+                font-size: 80px;
+                color: rgb(0, 96, 175);
+             }
+             div
+             {
+               border: 5px solid rgba(190, 212, 211, 0.63);
+               background-color: rgb(212, 230, 245);
+               height: fit-content;
+               width:400px;
+               padding-bottom: 40px;
+               padding-top: 40px;
+               margin: 50px auto;
+               border-radius: 10px;
+             }
+             h3
+             {
+               color: rgb(35, 56, 85);
+             }
+             button
+             {
+               background-color: cadetblue;
+               border: 3px solid;
+               border-color: rgb(44, 78, 99);
+               color: whitesmoke;
+               border-radius: 3px;padding: 5px;
+               margin-right: 5px;
+               padding: 10px;
+             }
+        
+        </style>
+    </head>
+
+    <body>
+        <h1 class="heading"><center>counter App</center></h1>
+        <div class="mainbx">
+            <center>
+            <h3 id="count">COUNT</h3>
+            <h1 id="num">0</h1>
+            <button id="in">Increase</button>
+            <button id="de">Decrease</button>
+            <button id="re">Reset</button>
+            </center>
+        </div>
+
+        <script>
+          let value=document.getElementById("num");
+          let incbutton=document.getElementById("in");
+          let decbutton=document.getElementById("de");
+          let resetbutton=document.getElementById("re");
+          let newvalue=0;
+
+          incbutton.onclick=function()
+          {
+            newvalue++;
+            value.textContent=newvalue;
+          };
+
+          decbutton.onclick=function()
+          {
+            newvalue--;
+            value.textContent=newvalue;
+          };
+
+          resetbutton.onclick=function()
+          {
+            newvalue=0;
+            value.textContent=newvalue;
+          };
+
+        </script>
+
+    </body>
+</html>
